@@ -21,18 +21,16 @@
 
             <div class="navbar-button flex-row">
                 <div class="lang flex-row">
-                    <div class="language-switch">
-                        <ul>
-                            <li>
-                                <span> En </span>
-                            </li>
-
-                            <li>
-                                <a href="./index-Fa.html"> Fa </a>
-                            </li>
-
-                        </ul>
+                    <div class="language-dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown()"> ▼ En</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="./index-Fa.html">Fa</a>
+                            <a href="#" class="EN"> En </a>
+                        </div>
                     </div>
+
+
+
                     <div class="global-img">
                         <img src="./img/global.svg" alt="" width="28px" height="28px" />
                     </div>
@@ -52,48 +50,53 @@
 
     <!-- hero  -->
     <div class="hero-container">
-        <div class="hero section-center hero-center">
-            <div class="hero-info">
-                <div class="hero-title">
-                    <p>THE FUTURE OF MINERAL MARKET IS HERE WITH</p>
+        <div class="hero-container-bg">
+            <div class="hero">
+                <div class="hero-right">
+                    <div class="hero-img">
+                        <img src="./img/trade2.png" alt="" />
+                    </div>
 
-                    <div class="NEW-animatins">
-                        <span class="animation1 hidden">N</span>
-                        <span class="animation1 hidden">E</span>
-                        <span class="animation1 hidden">W</span>
-                        <span class="animation1 hidden space"></span>
-                        <span class="animation1 hidden">i</span>
-                        <span class="animation1 hidden">s</span>
-                        <span class="animation1 hidden space"></span>
-                        <span class="animation1 hidden">N</span>
-                        <span class="animation1 hidden">E</span>
-                        <span class="animation1 hidden">W</span>
+                    <div class="one">
+                        <div class="two"></div>
+                        <div class="three"></div>
                     </div>
                 </div>
 
-                <div class="heroInfo-text gray">
-                    <p>
-                        NEW, an innovative and user-friendly AI model that uses
-                        cutting-edge machine learning techniques to predict Iron ore
-                        prices and analyze the market. NEW is revolutionizing AI
-                        technology in business at all levels. Your AI partner!
-                    </p>
-                    <br />
-                    <p>Try it now!</p>
+
+
+                <div class="hero-left">
+                    <div class="hero-title">
+                            <p>THE FUTURE OF MINERAL MARKET IS HERE WITH</p>
+
+                        <div class="NEW-animatins">
+                            <span class="animation1 hidden">N</span>
+                            <span class="animation1 hidden">E</span>
+                            <span class="animation1 hidden">W</span>
+                            <span class="animation1 hidden space"></span>
+                            <span class="animation1 hidden small">i</span>
+                            <span class="animation1 hidden small">s</span>
+                            <span class="animation1 hidden space"></span>
+                            <span class="animation1 hidden thin">N</span>
+                            <span class="animation1 hidden thin">E</span>
+                            <span class="animation1 hidden thin">W</span>
+                        </div>
+                    </div>
+
+                    <div class="heroInfo">
+                        <p>
+                            NEW, an innovative and user-friendly AI model that uses
+                            cutting-edge machine learning techniques to predict Iron ore
+                            prices and analyze the market. NEW is revolutionizing AI
+                            technology in business at all levels. Your AI partner!
+                        </p>
+                        <br />
+                        <p>Try it now!</p>
+                    </div>
+
                 </div>
 
-                <div class="social-icons hero-icons">
-                    <a href="#" class="social-icon">
-                        <img src="./img/newGooglePlay.svg" alt="error" class="btn" />
-                    </a>
 
-                    <a href="#" class="social-icon">
-                        <img src="./img/newApple.svg" alt="error" class="btn" />
-                    </a>
-                </div>
-            </div>
-            <div class="hero-img">
-                <img src="./img/trade1.png" alt="" />
             </div>
         </div>
     </div>
@@ -148,6 +151,7 @@
     <!--end of about  -->
 
     <!-- movie  -->
+
     <div class="movie-container">
         <div class="movie-background">
             <div class="movie">
@@ -195,8 +199,7 @@
                     <div class="video">
                         <video src="./video/sample.mp4" controls width="500px"></video>
                         <p class="gray">Please click on this video to see more.</p>
-                    </div>
-                </div>
+                    </div>                </div>
             </div>
         </div>
     </div>
@@ -208,33 +211,31 @@
             <div class="topside-footer flex-row">
                 <div class="footer-description">
                     <div class="footer-logo">
-                        <img src="./img/logo.svg" alt="" width="140" height="64" />
+                        <img src="./img/logo.svg" alt="" />
                     </div>
                     <div>
                         <p>
                             Track market trends and manage your workflow across all your business systems with NEW
                             continuously analyzing the market data for what matters to every business. Start
                         </p>
-                        <p>with NEW now!</p>
                     </div>
                 </div>
 
                 <div class="pages">
                     <p>Pages</p>
                     <br />
-                    <a href="#"> FAQs</a>
+                    <a href="#" target="_blank"> FAQs</a>
                     <br />
-                    <a href="#"> About us</a>
+                    <a href="#" target="_blank"> About us</a>
                     <br />
                     <a href="#"> Terms & Conditions</a>
-
                 </div>
 
                 <div class="contactUs">
                     <p>Contact Us</p>
                     <div class="social">
-                        <a href=""><img src="./img/linkedin.svg" alt="" /> </a>
-                        <a href=""><img src="./img/contactus.svg" alt="" /> </a>
+                        <a href="https://www.linkedin.com/company/new-is-new"><img src="./img/linkedin.svg" alt="" /> </a>
+                        <a href="/"><img src="./img/contactus.svg" alt="" /> </a>
                     </div>
                 </div>
             </div>
@@ -243,16 +244,15 @@
                 <div>
                     <p>All Rights Reserve</p>
                 </div>
-                <div class="getIt-img">
-                    <a href="/"> <img src="./img/newApple.svg" alt="" /> </a>
-                    <a href="/"> <img src="./img/newGooglePlay.svg" alt="" /> </a>
-                </div>
+
             </div>
         </div>
     </div>
     <!--end of footer  -->
 
     <script src="./js/animatin.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/video.js"></script>
 </body>
 
 </html>
