@@ -10,37 +10,34 @@
 </head>
 
 <body>
-
     <!--  navbar -->
     <div class="navbar-container flex-row">
         <div class="nav">
             <a class="logo-a" href="#">
                 <div class="nav-logo">
-                    <img src="./img/logo.svg"  alt="" >
+                    <img src="./img/logo.svg" alt="" />
                 </div>
             </a>
 
             <div class="navbar-button flex-row">
                 <div class="lang flex-row">
-                    <div class="language-switch">
-                        <ul>
-                            <li>
-                                <span> Fa </span>
-                            </li>
-
-                            <li>
-                                <a href="./index-En.html"> En </a>
-                            </li>
-                        </ul>
+                    <div class="language-dropdown">
+                        <button class="dropbtn" onclick="toggleDropdown()"> ▼ Fa</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Fa</a>
+                            <a href="./index-En.html"> En </a>
+                        </div>
                     </div>
+
+
+
                     <div class="global-img">
-                        <img src="./img/global.svg" alt="" width="28px" height="28px">
+                        <img src="./img/global.svg" alt="" width="28px" height="28px" />
                     </div>
                 </div>
 
-
                 <div class="login">
-                    <a href="./html/SignIn-Fa.html" style="color: white;"> ورود </a>
+                    <a href="./html/SignIn-Fa.html" style="color: white"> ورود </a>
                 </div>
 
                 <div class="signUP">
@@ -53,55 +50,54 @@
 
     <!-- hero  -->
     <div class="hero-container">
-        <div class="hero section-center hero-center">
-            <div class="hero-info">
+        <div class="hero-container-bg">
+            <div class="hero">
+                <div class="hero-right">
+                    <div class="hero-title">
+                        <div class="hero-title-fa">
+                            <span>آینده بازار مواد معدنی </span>
+                            <span class="small"> اینجا با </span>
+                        </div>
 
-                <div class="hero-title">
-                    <p>آینده بازار مواد معدنی اینجا با</p>
+                        <div class="NEW-animatins">
+                            <span class="animation1 hidden">N</span>
+                            <span class="animation1 hidden">E</span>
+                            <span class="animation1 hidden">W</span>
+                            <span class="animation1 hidden space"></span>
+                            <span class="animation1 hidden small">i</span>
+                            <span class="animation1 hidden small">s</span>
+                            <span class="animation1 hidden space"></span>
+                            <span class="animation1 hidden thin">N</span>
+                            <span class="animation1 hidden thin">E</span>
+                            <span class="animation1 hidden thin">W</span>
+                        </div>
+                    </div>
 
-                    <div class="NEW-animatins">
-                        <span class="animation1 hidden">N</span>
-                        <span class="animation1 hidden">E</span>
-                        <span class="animation1 hidden">W</span>
-                        <span class="animation1 hidden space"></span>
-                        <span class="animation1 hidden">i</span>
-                        <span class="animation1 hidden">s</span>
-                        <span class="animation1 hidden space"></span>
-                        <span class="animation1 hidden">N</span>
-                        <span class="animation1 hidden">E</span>
-                        <span class="animation1 hidden">W</span>
+                    <div class="heroInfo">
+                        <p>
+                            با NEW روند بازار پیش روی شماست، از آن برای بهبود تجارت خود استفاده کنید. NEW به طور پیوسته
+                            داده های بازار را مورد تحلیل قرار می دهد تا نتایج به روز در اختیار شما قرارگیرد.
+                        </p>
+                        <br />
+                        <p class="start-now">همین الان شروع کنید!</p>
+                    </div>
+
+                </div>
+
+                <div class="hero-left">
+                    <div class="hero-img">
+                        <img src="./img/trade2.png" alt="" />
+                    </div>
+
+                    <div class="one">
+                        <div class="two"></div>
+                        <div class="three"></div>
                     </div>
                 </div>
-
-                <div class="heroInfo-text gray">
-                    <p>
-                        با NEW روند بازار پیش روی شماست، از آن برای بهبود تجارت خود استفاده
-                        کنید. NEW به طور پیوسته داده های بازار را مورد تحلیل قرار می دهد تا
-                        نتایج به روز در اختیار شما قرارگیرد.
-                    </p>
-                    <br>
-                    <p>همین الان شروع کنید!</p>
-                </div>
-
-                <div class="social-icons hero-icons">
-                    <a href="#" class="social-icon">
-                        <img src="./img/newGooglePlay.svg" alt="error" class="btn" />
-                    </a>
-
-                    <a href="#" class="social-icon">
-                        <img src="./img/newApple.svg" alt="error" class="btn" />
-                    </a>
-                </div>
-
             </div>
-            <div class="hero-img">
-                <img src="./img/trade1.png" alt="">
-            </div>
-
         </div>
     </div>
     <!--end of hero  -->
-
 
     <!-- about  -->
     <div class="about-container">
@@ -112,99 +108,103 @@
 
             <div class="about-body">
                 <div class="about-description">
-                    <img src="./img/business.svg" alt="" class="about-img" />
+                    <div class="about-img">
+                        <img src="./img/business.svg" alt="" />
+                    </div>
                     <div class="about-info">
                         <p class="section-title">تحلیل روند بازار</p>
                         <p class="section-text gray">
-                            بررسی روند بازار یک ابزار مهم برای هر تجارت و کسب و کاری است. نظارت
-                            مستمر بر تغییرات بازار، فرصتهای پیش رو را برای شما نمایان میکند.
+                            بررسی روند بازار یک ابزار مهم برای هر تجارت و کسب و کاری است.
+                            نظارت مستمر بر تغییرات بازار، فرصتهای پیش رو را برای شما نمایان
+                            میکند.
                         </p>
                     </div>
                 </div>
 
                 <div class="about-description">
-                    <img src="./img/predict.svg" alt="" class="about-img" />
+                    <div class="about-img">
+                        <img src="./img/predict.svg" alt="" />
+                    </div>
+
                     <div class="about-info">
                         <p class="section-title">مدیریت ریسک</p>
                         <p class="section-text gray">
-                            با NEW در محیط کسب و کار پیچیده و متغیر امروز از دارایی و اعتبار خود
-                            محافظت کنید.
+                            با NEW در محیط کسب و کار پیچیده و متغیر امروز از دارایی و اعتبار
+                            خود محافظت کنید.
                         </p>
                     </div>
                 </div>
 
-
                 <div class="about-description">
-                    <img src="./img/ml.svg" alt="" class="about-img" />
+                    <div class="about-img">
+                        <img src="./img/ml.svg" alt="" />
+                    </div>
                     <div class="about-info">
-                        <p class="section-title"> استفاده از به روزترین مدلهای یادگیری ماشین</p>
+                        <p class="section-title">
+                            استفاده از به روزترین مدلهای یادگیری ماشین
+                        </p>
                         <p class="section-text gray">
                             NEW، یک پلتفرم هوش مصنوعی است که با استفاده از روش های به روز
                             یادگیری ماشین، تجارت مواد معدنی را متحول میکند.
                         </p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <!--end of about  -->
-
 
     <!-- movie  -->
 
     <div class="movie-container">
         <div class="movie-background">
             <div class="movie">
-
-
                 <div class="movie-title">
-                    <p>با دیدن فیلم NEW را تجربه کند.</p>
+                    <p>با دیدن فیلم NEW را تجربه کنید.</p>
                 </div>
-
 
                 <div class="movie-body">
                     <div class="movie-description">
-
                         <div class="movie-description-title">
                             <p class="gray">
-                                NEW ، یک مدل نوین هوش مصنوعی است که از روش های به روز یادگیری ماشین برای
-                                پیش بینی قیمت سنگ آهن و تحلیل بازار استفاده می کند.NEW ، همکار هوش
-                                مصنوعی شما است تا در توسعه و تغییر کسب و کارتان یاریتان کند.
+                                NEW ، یک مدل نوین هوش مصنوعی است که از روش های به روز یادگیری
+                                ماشین برای پیش بینی قیمت سنگ آهن و تحلیل بازار استفاده می
+                                کند.NEW ، همکار هوش مصنوعی شما است تا در توسعه و تغییر کسب و
+                                کارتان یاریتان کند.
                             </p>
-                            <br>
+                            <br />
                             <p class="gray">با مزایای استفاده از NEW آشنا شوید!</p>
                         </div>
 
                         <div class="description">
-                            <img src="./img/arrow-right.svg" alt="" class="rotate">
-                            <p>در این پروژه علاوه بر اینکه از روش های هوش مصنوعی، یادگیری ماشین و داده های پیشین قیمت
-                                سنگ آهن،
-                                در
-                                مدلسازی، از بیشن از 30 سال تجربه آقای دکتر کیوان جعفری طهرانی در تحلیل بازار و تجارت سنگ
-                                آهن
-                                برای
-                                پیش بینی رفتار بازار استفاده شد. </p>
-                        </div>
-
-                        <div class="description">
-                            <img src="./img/arrow-right.svg" alt="" class="rotate">
-                            <p>NEW خود را با تغییرات بازار به روز میکند تا شما را در مدیریت ریسک و یافتن فرصتهای تجاری
-                                یاری کند.
+                            <img src="./img/arrow-right.svg" alt="" class="rotate" />
+                            <p>
+                                در این پروژه علاوه بر اینکه از روش های هوش مصنوعی، یادگیری
+                                ماشین و داده های پیشین قیمت سنگ آهن، در مدلسازی، از بیشن از 30
+                                سال تجربه آقای دکتر کیوان جعفری طهرانی در تحلیل بازار و تجارت
+                                سنگ آهن برای پیش بینی رفتار بازار استفاده شد.
                             </p>
                         </div>
 
-
                         <div class="description">
-                            <img src="./img/arrow-right.svg" alt="" class="rotate">
-                            <p>NEW احتمال هرگونه تغییرات ناگهانی بازار را به شما اطالع میدهد.</p>
+                            <img src="./img/arrow-right.svg" alt="" class="rotate" />
+                            <p>
+                                NEW خود را با تغییرات بازار به روز میکند تا شما را در مدیریت
+                                ریسک و یافتن فرصتهای تجاری یاری کند.
+                            </p>
                         </div>
 
+                        <div class="description">
+                            <img src="./img/arrow-right.svg" alt="" class="rotate" />
+                            <p>
+                                NEW احتمال هرگونه تغییرات ناگهانی بازار را به شما اطلاع میدهد.
+                            </p>
+                        </div>
                     </div>
 
                     <div class="video">
-                        <video src="./video/sample.mp4" controls width="500px"></video>
-                        <p class="gray">لطفا بر روی فیلم کلید نمایید. </p>
+                            <video src="./video/sample.mp4" id="NEWVideo" controls></video>
+                            <p class="gray">لطفا بر روی فیلم کلیک نمایید.</p>
                     </div>
                 </div>
             </div>
@@ -212,59 +212,54 @@
     </div>
     <!--end of movie  -->
 
-
     <!-- footer  -->
     <div class="footer-container">
         <div class="footer">
             <div class="topside-footer flex-row">
                 <div class="footer-description">
                     <div class="footer-logo">
-                        <img src="./img/logo.svg" alt="" width="140" height="64">
+                        <img src="./img/logo.svg" alt="" />
                     </div>
                     <div>
-                        <p>با NEW روند بازار پیش روی شماست، از آن برای بهبود تجارت خود استفاده کنید. NEW بهطور پیوسته
-                            داده
-                            های بازار را مورد تحلیل قرار میدهد تا نتایج به روز در اختیار شما قرارگیرد.
+                        <p>
+                            با NEW روند بازار پیش روی شماست، از آن برای بهبود تجارت خود
+                            استفاده کنید. NEW بهطور پیوسته داده های بازار را مورد تحلیل قرار
+                            میدهد تا نتایج به روز در اختیار شما قرارگیرد. همین الان شروع
+                            کنید! .
                         </p>
-                        <P>همین الان شروع کنید!</P>
                     </div>
                 </div>
 
                 <div class="pages">
-                    <p> صفحات </p>
-                    <br>
-                    <a href="#"> سوالات شما</a>
-                    <br>
-                    <a href="#"> درباره ما</a>
+                    <p>صفحات</p>
+                    <br />
+                    <a href="./html/FAQS.html" target="_blank"> سوالات شما</a>
+                    <br />
+                    <a href="./html/about-us-fa.html" target="_blank"> درباره ما</a>
                 </div>
 
                 <div class="contactUs">
-                    <p> ارتباط با ما</p>
+                    <p>ارتباط با ما</p>
                     <div class="social">
-                        <a href="/"><img src="./img/linkedin.svg" alt=""> </a>
-                        <a href="/"><img src="./img/contactus.svg" alt=""> </a>
+                        <a href="https://www.linkedin.com/company/new-is-new"><img src="./img/linkedin.svg" alt="" /> </a>
+                        <a href="/"><img src="./img/contactus.svg" alt="" /> </a>
                     </div>
                 </div>
-
             </div>
-
 
             <div class="downside-footer">
                 <div>
-                    <p> All Rights Reserve </p>
+                    <p>All Rights Reserve</p>
                 </div>
-                <div class="getIt-img">
-                    <a href="/"> <img src="./img/newApple.svg" alt=""> </a>
-                    <a href="/"> <img src="./img/newGooglePlay.svg" alt=""> </a>
-                </div>
-            </div>
 
+            </div>
         </div>
     </div>
     <!--end of footer  -->
 
-
     <script src="./js/animatin.js"></script>
+    <script src="./js/language.js"></script>
+    <script src="./js/video.js"></script>
 </body>
 
 </html>
