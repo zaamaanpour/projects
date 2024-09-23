@@ -365,6 +365,7 @@ hero
     font-style: normal;
     text-align: left;
     justify-content:flex-end;
+    font-weight: 700;
     color: var(--clr-white);
     font-family: var(--ff-primary);
     padding: 50px 20px 0 30px;
@@ -379,8 +380,9 @@ hero
     visibility: hidden;
 }
 
-.bold {
-    font-weight: 700 !important;
+.small {
+    font-weight: 400;
+    font-size: 32px;
 }
 
 .thin {
@@ -479,9 +481,6 @@ about
     align-items: flex-start;
     justify-content: space-around;
     margin-top: 20px;
-    overflow-y: hidden;
-    overflow-x: auto !important;
-
 }
 
 .about-description {
@@ -538,7 +537,6 @@ movie
 
 .movie-container {
     background-color:var(--clr-black);
-    background-image:linear-gradient(transparent, #000) ;
     width: 100%;
     height: auto;
     font-family: var(--ff-primary);
@@ -813,11 +811,6 @@ media
 
 
 @media screen and (max-width: 1270px) {
-
-    .movie-background{
-        background-size: 48%;
-    }
-
     .movie-body {
         flex-direction: column-reverse;
         align-items: flex-start;
@@ -965,20 +958,6 @@ media
 }
 
 @media only screen and (max-width: 500px) {
-
-
-    .about-title{
-        text-align: left;
-    }
-
-    .about-description{
-        align-items: center;
-        text-align: center;
-        max-width: 70%;
-        width: 70%;
-        margin: 10px 2%;
-        min-width: 70%;
-    }
 
     .topside-footer,
     .downside-footer {
