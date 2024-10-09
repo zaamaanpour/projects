@@ -1,0 +1,250 @@
+/*
+===================
+Fonts
+===================
+*/
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url("../fonts/IRANSansWeb\(FaNum\).woff2") format("woff2"),
+        url("../fonts/IRANSansWeb\(FaNum\).woff") format("woff"),
+        url("../fonts/IRANSansWeb\(FaNum\)_Bold.woff") format("woff"),
+        url("../fonts/IRANSansWeb_Bold.woff") format("woff"),
+        url("../fonts/IRANSansWeb_Light.woff") format("woff");
+}
+
+/*
+===================
+Variables
+===================
+*/
+:root {
+    --clr-primary: #1c39bb;
+    --clr-black: #14161c;
+    --clr-grey-1: #102a42;
+    --clr-grey-5: #617d98;
+    --clr-gray-3: #c1c2c5;
+    --clr-grey-10: #f1f5f8;
+    --clr-white: #fff;
+    --ff-primary: "IRANSansWeb", sans-serif;
+}
+
+/*
+===================
+Global Styles
+===================
+*/
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-primary);
+    background: var(--clr-white);
+    color: var(--clr-grey-1);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    text-align: right;
+    font-size: 1rem;
+    transition: all 0.3s;
+    margin: 0;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*
+===================
+about-us
+===================
+*/
+
+.aboutUsContainer {
+    background-color:rgba(0, 0, 0, 1);
+    height: auto;
+}
+
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../../public/img/pattern2.png);
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto !important;
+    height: auto;
+    font-family: var(--ff-primary);
+}
+
+
+.aboutUsTitle{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    color: var(--clr-white);
+    text-align: center;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.aboutUsLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    font-size: 20px;
+    padding-top: 20px;
+    color: #1a68ff;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.aboutUsLink a{
+    color: #808387;
+}
+
+.aboutUsLink img{
+    transform: rotate(180deg);
+    color: #808387;
+    width: 14px;
+    height: 14px;
+}
+
+.aboutUsLink span{
+    padding-right: 10px;
+}
+
+
+
+.aboutDescriptionContainer{
+    height: auto;
+    background-color:var(--clr-black);
+    flex-grow: 1;
+}
+
+
+.aboutDescription{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto !important;
+    height: auto;
+    font-family: var(--ff-primary);
+    transition: all 2s;
+    min-height: 400px;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    color: #c1c2c5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.textContainer h3{
+    color: white;
+}
+
+
+
+/*
+===================
+media
+===================
+*/
+
+
+@media only screen and (max-width: 1440px) {
+
+
+    .aboutUs {
+        width: calc(100% - 8vw) !important;
+    }
+
+    .aboutDescription{
+        width: calc(100% - 8vw) !important;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .aboutUs{
+        background-position: -100px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .aboutUs{
+        background-size: 250px;
+        background-position: -110px;
+    }
+
+}
+
+
+
+@media screen and (max-width:380px) {
+    .aboutUs{
+        background-size: cover;
+        background-position: -224px;
+    } 
+}
+
+
+
+
+@media screen and (max-width:330px) {
+    .aboutUs{
+        background-size: cover;
+        background-position: -200px;
+    } 
+}
+
+
+
+@media screen and (max-width: 270px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 150px) {
+    .logoA{
+        overflow-x: hidden;
+    }
+    .aboutUsLink {
+        flex-wrap: wrap;
+    }
+}
